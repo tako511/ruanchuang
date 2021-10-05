@@ -1,0 +1,12 @@
+// 测试。小明去楼下KFC吃汉堡
+public class XiaoMing {
+    public static void main(String[] args) {
+        MakeHumburgImpl mhi = new MakeHumburgImpl();
+        KFC kfc = new KFC();
+        kfc.setMakeHumburg(mhi);
+        kfc.order();
+        kfc.pay();
+        kfc.eat();
+        kfc.box();
+    }
+}
