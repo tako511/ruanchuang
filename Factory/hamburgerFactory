@@ -1,3 +1,6 @@
+// 不同风味汉堡所需原料（接口）的实现
+// 调用原料
+
 // 原味鸡排堡（工厂）所需原料
 public class ChickenHamburgerFactory implements HamburgIngredientFactory {
 
