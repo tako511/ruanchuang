@@ -1,0 +1,19 @@
+public class HamburgTestDrive {
+    public static void main(String[] args) {
+        // 声明HamburgMenu对象。顾客获得菜单
+        MakeHamburg menu = new HamburgMenu();
+        
+        // 顾客获得菜单后开始点单
+        PrepareHamburger Hamburg = menu.orderHamburg("ChickenHamburger");
+        System.out.printf("顾客001订单：\n" + Hamburg + "------------------------" + "\n" + "\n");
+
+        Hamburg = menu.orderHamburg("OrleansHamburger");
+        System.out.printf("顾客002订单：\n" + Hamburg + "------------------------" + "\n" + "\n");
+
+        Hamburg = menu.orderHamburg("TomatoSteakHamburger");
+        System.out.printf("顾客003订单：\n" + Hamburg + "------------------------" + "\n" + "\n");
+
+        Hamburg = menu.orderHamburg("CrabHamburger");
+        System.out.printf("顾客004订单：\n" + Hamburg + "------------------------" + "\n" + "\n");
+    }
+}
