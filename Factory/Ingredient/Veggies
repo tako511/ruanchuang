@@ -1,0 +1,25 @@
+// 生菜
+public class Veggies_Lettuce implements Veggies {
+
+    public String toString() {
+        return "生菜";
+    }
+}
+
+
+// 番茄
+public class Veggies_Tomato implements Veggies {
+    
+    public String toString() {
+        return "番茄";
+    }
+}
+
+
+// 辣椒
+public class Veggies_RedPepper implements Veggies {
+    
+    public String toString() {
+        return "辣椒";
+    }
+}
