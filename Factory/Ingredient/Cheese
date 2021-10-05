@@ -1,0 +1,25 @@
+// 马苏里拉奶酪芝士
+public class Cheese_Mozzarella implements Cheese {
+    
+    public String toString() {
+        return "马苏里拉奶酪芝士";
+    }
+}
+
+
+// 帕玛森芝士
+public class Cheese_Parmesan implements Cheese {
+    
+    public String toString() {
+        return "帕玛森芝士";
+    }
+}
+
+
+// 雷奇亚奶酪芝士
+public class Cheese_Reggiano implements Cheese {
+    
+    public String toString() {
+        return "雷奇亚奶酪芝士";
+    }
+}
