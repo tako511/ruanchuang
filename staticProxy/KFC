@@ -1,0 +1,57 @@
+/** 
+ * 类{@code KFC}实现MakeHumburg接口中的方法，在MakeHumburgImpl的基础上添加方法
+ * 
+ * <p>
+ * 小明楼下KFC制作汉堡的过程，并扩展了点餐、付费、打包等业务
+ * 
+ * @author xue
+ * @param mhi
+ *
+ */
+public class KFC implements MakeHumburg {
+
+    private MakeHumburgImpl mhi;
+
+    // 构造方法，传参。调用MakeHumburgImpl的数据
+    public void setMakeHumburg(MakeHumburgImpl mhi) {
+        this.mhi = mhi;
+    }
+
+    public void buyIngredient() {
+        mhi.buyIngredient();
+    }
+
+    public void cutFruits() {
+        mhi.cutFruits();
+    }
+
+    public void rissole() {
+        mhi.rissole();
+    }
+
+    public void cleanEquipment() {
+        mhi.cleanEquipment();
+    }
+
+    // 新增
+    public void packag() {
+        System.out.println("包装汉堡");
+    }
+
+    public void order() {
+        System.out.println("点餐");
+    }
+
+    public void pay() {
+        System.out.println("付费");
+    }
+
+    public void eat() {
+        System.out.println("吃汉堡");
+    }
+
+    public void box() {
+        System.out.println("吃不完，打包带走");
+    }
+
+}
