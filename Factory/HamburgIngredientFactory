@@ -1,0 +1,16 @@
+// 不同汉堡所需原料（抽象）
+public interface HamburgIngredientFactory {
+
+    // 牛排
+    public Steak createSteak();
+
+    // 酱料
+    public Sauce createSauce();
+
+    // 芝士
+    public Cheese createCheese();
+
+    // 蔬菜
+    public Veggies[] createVeggies();
+    
+}
