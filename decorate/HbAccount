@@ -1,0 +1,78 @@
+/**
+ * 类{@code HbAccount}实现HbMenu接口中的方法并添加结算功能
+ * 
+ * @author xue
+ *
+ * @param hbm 
+ * @param sum 汉堡总价格
+ */
+public class HbAccount implements HbMenu {
+    private HbMenu hbm;
+    int sum = 0;
+
+    // 构造方法，传参
+    public HbAccount(HbMenu hbm) {
+        this.hbm = hbm;
+    }
+
+    public void chicken() {
+        hbm.chicken();
+    }
+
+    public void vegetable() {
+        hbm.vegetable();
+    }
+
+    public void tomato() {
+        hbm.tomato();
+    }
+
+    public void beef() {
+        hbm.beef();
+    }
+
+    public void cheese() {
+        hbm.cheese();
+    }
+
+    public void egg() {
+        hbm.egg();
+    }
+
+    // 每调用一次HbAccount中新增的方法，sum进行一次运算
+    public void aChicken() {
+        hbm.chicken();
+        System.out.println("8元");
+        this.sum += 8;
+    }
+
+    public void aVegetable() {
+        hbm.vegetable();
+        System.out.println("3元");
+        this.sum += 3;
+    }
+
+    public void aTomato() {
+        hbm.tomato();
+        System.out.println("3元");
+        this.sum += 3;
+    }
+
+    public void aBeef() {
+        hbm.beef();
+        System.out.println("10元");
+        this.sum += 10;
+    }
+
+    public void aCheese() {
+        hbm.cheese();
+        System.out.println("5元");
+        this.sum += 5;
+    }
+
+    public void aEgg() {
+        hbm.egg();
+        System.out.println("2元");
+        this.sum += 2;
+    }
+}
