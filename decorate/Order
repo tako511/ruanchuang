@@ -1,0 +1,32 @@
+// 模拟订单
+public class Order {
+    public static void main(String[] args) {
+        // 汉堡
+        // 调用HbAccount、HbMenuImpl类，实现HbMenu的方法
+        Account ac = new Account(new MenuImpl());
+        System.out.println("------自选配料汉堡------");
+        System.out.println("自选配料：");
+        // 顾客选择汉堡配料
+        ac.aChicken();
+        ac.aBeef();
+        ac.aVegetable();
+        ac.aTomato();
+        ac.aCheese();
+        // 输出汉堡单价
+        System.out.println("自选配料汉堡单价：" + ac.sum + "元");
+
+        // 奶茶
+        Account mc = new Account(new MenuImpl());
+        System.out.println("------自选配料奶茶------");
+        System.out.println("自选配料：");
+        // 顾客选择奶茶配料
+        mc.aMashedTaro();
+        mc.aYeguo();
+        // 输出奶茶单价
+        System.out.println("自选配料奶茶单价：" + mc.sum + "元");
+        // 输出总价
+        System.out.println("-------------------------");
+        System.out.println("                 总价：" + (ac.sum + mc.sum));
+        System.out.println("-------------------------");
+    }
+}
