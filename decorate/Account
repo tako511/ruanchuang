@@ -1,0 +1,130 @@
+/**
+ * 类{@code Account}实现Menu接口中的方法并添加结算功能
+ * 
+ * @author xue
+ *
+ * @param hbm 调用MenuImpl中的方法
+ * @param sum 总价格
+ */
+public class Account implements Menu {
+    private Menu hbm;
+    int sum = 0;
+
+    // 构造方法，传参
+    public Account(Menu hbm) {
+        this.hbm = hbm;
+    }
+
+    // 汉堡
+    public void chicken() {
+        hbm.chicken();
+    }
+
+    public void vegetable() {
+        hbm.vegetable();
+    }
+
+    public void tomato() {
+        hbm.tomato();
+    }
+
+    public void beef() {
+        hbm.beef();
+    }
+
+    public void cheese() {
+        hbm.cheese();
+    }
+
+    public void egg() {
+        hbm.egg();
+    }
+
+    // 调用一次方法，进行一次sum运算
+    public void aChicken() {
+        hbm.chicken();
+        System.out.println("8元");
+        this.sum += 8;
+    }
+
+    public void aVegetable() {
+        hbm.vegetable();
+        System.out.println("3元");
+        this.sum += 3;
+    }
+
+    public void aTomato() {
+        hbm.tomato();
+        System.out.println("3元");
+        this.sum += 3;
+    }
+
+    public void aBeef() {
+        hbm.beef();
+        System.out.println("10元");
+        this.sum += 10;
+    }
+
+    public void aCheese() {
+        hbm.cheese();
+        System.out.println("5元");
+        this.sum += 5;
+    }
+
+    public void aEgg() {
+        hbm.egg();
+        System.out.println("2元");
+        this.sum += 2;
+    }
+
+    // 奶茶
+    public void pudding() {
+        hbm.pudding();
+    }
+
+    public void yeguo() {
+        hbm.yeguo();
+    }
+
+    public void ormosia() {
+        hbm.ormosia();
+    }
+
+    public void mashedTaro() {
+        hbm.mashedTaro();
+    }
+
+    public void pearl() {
+        hbm.pearl();
+    }
+
+    public void aPudding() {
+        hbm.pudding();
+        System.out.println("4元");
+        this.sum += 4;
+    }
+
+    public void aYeguo() {
+        hbm.yeguo();
+        System.out.println("6元");
+        this.sum += 6;
+    }
+
+    public void aOrmosia() {
+        hbm.ormosia();
+        System.out.println("4元");
+        this.sum += 4;
+    }
+
+    public void aMashedTaro() {
+        hbm.mashedTaro();
+        System.out.println("5元");
+        this.sum += 5;
+    }
+
+    public void aPearl() {
+        hbm.pearl();
+        System.out.println("4元");
+        this.sum += 4;
+    }
+}
