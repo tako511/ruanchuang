@@ -1,0 +1,54 @@
+/**
+ * 类{@code MenuImpl}自选汉堡、奶茶配料菜单,实现Menu接口中的方法
+ * 
+ * @author xue
+ *
+ */
+public class MenuImpl implements Menu {
+
+    // 汉堡
+    public void chicken() {
+        System.out.print("鸡肉" + " ");
+    }
+
+    public void vegetable() {
+        System.out.print("青菜" + " ");
+    }
+
+    public void tomato() {
+        System.out.print("西红柿" + " ");
+    }
+
+    public void beef() {
+        System.out.print("牛肉饼" + " ");
+    }
+
+    public void cheese() {
+        System.out.print("猪肉饼" + " ");
+    }
+
+    public void egg() {
+        System.out.print("鸡蛋" + " ");
+    }
+
+    // 奶茶
+    public void pudding() {
+        System.out.print("布丁" + " ");
+    }
+
+    public void yeguo() {
+        System.out.print("椰果" + " ");
+    }
+
+    public void ormosia() {
+        System.out.print("红豆" + " ");
+    }
+
+    public void mashedTaro() {
+        System.out.print("芋泥" + " ");
+    }
+
+    public void pearl() {
+        System.out.print("珍珠" + " ");
+    }
+}
