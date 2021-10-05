@@ -1,0 +1,73 @@
+// 奥尔良汉堡
+// 继承PrepareHamburger类
+public class OrleansHamburger extends PrepareHamburger {
+    HamburgIngredientFactory ingredientFactory;
+ 
+    // 构造方法
+    public OrleansHamburger(HamburgIngredientFactory ingredientFactory) {
+        this.ingredientFactory = ingredientFactory;
+    }
+ 
+    // 实现prepare方法
+    void prepare() {
+        System.out.println("准备制作" + name + "原材料");
+        steak = ingredientFactory.createSteak();
+        sauce = ingredientFactory.createSauce();
+        cheese = ingredientFactory.createCheese();
+        veggies = ingredientFactory.createVeggies();
+    }
+}
+
+
+// 番茄牛肉堡
+public class TomatoSteakHamburger extends PrepareHamburger {
+    HamburgIngredientFactory ingredientFactory;
+
+    public TomatoSteakHamburger(HamburgIngredientFactory ingredientFactory) {
+        this.ingredientFactory = ingredientFactory;
+    }
+
+    void prepare() {
+        System.out.println("准备制作" + name + "原材料");
+        steak = ingredientFactory.createSteak();
+        sauce = ingredientFactory.createSauce();
+        cheese = ingredientFactory.createCheese();
+        veggies = ingredientFactory.createVeggies();
+    }
+}
+
+
+// 蟹黄堡
+public class CrabHamburger extends PrepareHamburger {
+    HamburgIngredientFactory ingredientFactory;
+
+    public CrabHamburger(HamburgIngredientFactory ingredientFactory) {
+        this.ingredientFactory = ingredientFactory;
+    }
+
+    void prepare() {
+        System.out.println("准备制作" + name + "原材料");
+        steak = ingredientFactory.createSteak();
+        sauce = ingredientFactory.createSauce();
+        cheese = ingredientFactory.createCheese();
+        veggies = ingredientFactory.createVeggies();
+    }
+}
+
+
+// 原味鸡排堡
+public class ChickenHamburger extends PrepareHamburger {
+    HamburgIngredientFactory ingredientFactory;
+ 
+    public ChickenHamburger(HamburgIngredientFactory ingredientFactory) {
+        this.ingredientFactory = ingredientFactory;
+    }
+ 
+    void prepare() {
+        System.out.println("准备制作" + name + "原材料");
+        steak = ingredientFactory.createSteak();
+        sauce = ingredientFactory.createSauce();
+        cheese = ingredientFactory.createCheese();
+        veggies = ingredientFactory.createVeggies();
+    }
+}
