@@ -1,0 +1,25 @@
+// 肉排接口
+public interface Steak {
+    public String toString();
+    
+}
+
+// 芝士接口
+public interface Cheese {
+    public String toString();
+    
+}
+
+
+// 酱料接口
+public interface Sauce {
+    public String toString();
+    
+}
+
+
+// 蔬菜接口
+public interface Veggies {
+    public String toString();
+    
+}
