@@ -1,0 +1,78 @@
+// 抽象类。
+// 制作汉堡的大体流程
+public abstract class PrepareHamburger {
+    // 汉堡名称（顾客订单中汉堡的名字）
+    String name;
+
+    // 通过订单名字接收的原料信息
+    Steak steak;
+    Sauce sauce;
+    Veggies veggies[];
+    Cheese cheese;
+
+    // 抽象方法
+    // 准备原材料
+    abstract void prepare();
+
+    void bake() {
+        System.out.println("将面团放在180度下烘烤20分钟");
+    }
+
+    void cut() {
+        System.out.println("将烘烤完成的面团拦腰切开");
+    }
+
+    void burdening() {
+        System.out.println("将沙拉酱、蔬菜、煎好的肉排依次放入汉堡内");
+    }
+
+    void box() {
+        System.out.println("将汉堡放在正式的汉堡店盒子里");
+    }
+
+    // 接收顾客订单信息（汉堡名字）
+    void setName(String name) {
+        this.name = name;
+    }
+
+    String getName() {
+        return name;
+    }
+
+    // 输出汉堡要准备的原料
+    public String toString() {
+    
+        // 创建String变量（在获得订单时打印汉堡所需原料）
+        String result = new String();
+        
+        // 打印汉堡名字
+        result += "---- " + name + " ----\n";
+        
+        // 如果原料对应不等于null则对String进行添加
+        if (steak != null) {
+            result += steak;
+            // 换行，方便厨师读取原料
+            result += "\n";
+        }
+        if (sauce != null) {
+            result += sauce;
+            result += "\n";
+        }
+        if (cheese != null) {
+            result += cheese;
+            result += "\n";
+        }
+        if (veggies != null) {
+            // 获得所需蔬菜种类，防止蔬菜组溢出
+            for (int i = 0; i < veggies.length; i++) {
+                result += veggies[i];
+                // 每输出一种蔬菜后添加逗号，方便厨师读取蔬菜原料
+                if (i < veggies.length - 1) {
+                    result += ", ";
+                }
+            }
+            result += "\n";
+        }
+        return result.toString();
+    }
+}
