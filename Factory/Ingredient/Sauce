@@ -1,0 +1,16 @@
+// 海员式沙司
+public class Sauce_Marinara implements Sauce {
+    
+    public String toString() {
+        return "海员式沙司";
+    }
+}
+
+
+// 番茄酱
+public class Sauce_Tomato implements Sauce {
+    
+    public String toString() {
+        return "番茄酱";
+    }
+}
