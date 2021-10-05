@@ -1,0 +1,25 @@
+/** 
+ * 类{@code MakeHumburgImpl}实现MakeHumburg接口中的方法
+ * 
+ * @author xue
+ *
+ */
+public class MakeHumburgImpl implements MakeHumburg {
+
+    public void buyIngredient() {
+        System.out.println("购买原料");
+    }
+
+    public void cutFruits() {
+        System.out.println("对水果进行切片");
+    }
+
+    public void rissole() {
+        System.out.println("炸肉饼");
+    }
+
+    public void cleanEquipment() {
+        System.out.println("吃完后清理设备");
+    }
+
+}
