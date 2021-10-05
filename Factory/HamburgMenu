@@ -1,0 +1,35 @@
+// 继承MakeHamburg类
+public class HamburgMenu extends MakeHamburg {
+
+    // 获取汉堡名字
+    protected PrepareHamburger createHamburg(String item) {
+        // 创建PrepareHamburger、HamburgIngredientFactory对象
+        PrepareHamburger Hamburg = null;
+        HamburgIngredientFactory ingredientFactory;
+        
+        // 名字相同则开始调用
+        if (item.equals("ChickenHamburger")) {
+            // 声明对象
+            ingredientFactory = new ChickenHamburgerFactory();
+            Hamburg = new ChickenHamburger(ingredientFactory);
+            // 调用Hamburg.setName设置名字
+            Hamburg.setName("原味鸡排堡");
+
+        } else if (item.equals("OrleansHamburger")) {
+            ingredientFactory = new OrleansHamburgerFactory();
+            Hamburg = new OrleansHamburger(ingredientFactory);
+            Hamburg.setName("奥尔良汉堡");
+
+        } else if (item.equals("TomatoSteakHamburger")) {
+            ingredientFactory = new TomatoSteakHamburgerFactory();
+            Hamburg = new TomatoSteakHamburger(ingredientFactory);
+            Hamburg.setName("番茄牛排堡");
+
+        } else if (item.equals("CrabHamburger")) {
+            ingredientFactory = new CrabHamburgerFactory();
+            Hamburg = new CrabHamburger(ingredientFactory);
+            Hamburg.setName("蟹黄堡");
+        }
+        return Hamburg;
+    }
+}
