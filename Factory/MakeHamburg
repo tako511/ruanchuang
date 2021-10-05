@@ -1,0 +1,21 @@
+// 抽象类
+// 制作汉堡流程
+public abstract class MakeHamburg {
+
+    // 抽象方法。参数为汉堡名称
+    protected abstract PrepareHamburger createHamburg(String item);
+
+    // 接收汉堡订单
+    public PrepareHamburger orderHamburg(String type) {
+        // 接收汉堡名字，创建PrepareHamburger对象，调用其方法
+        PrepareHamburger Hamburg = createHamburg(type);
+        System.out.println("--- 制作" + Hamburg.getName() + " ---");
+        
+        // 接收汉堡订单后进行制作
+        Hamburg.prepare();
+        Hamburg.bake();
+        Hamburg.cut();
+        Hamburg.box();
+        return Hamburg;
+    }
+}
