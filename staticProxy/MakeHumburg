@@ -1,0 +1,17 @@
+/** 
+ * 接口{@code MakeHumburg}
+ * 
+ * 定义做汉堡的基本流程
+ * 
+ * @author xue
+ *
+ */
+public interface MakeHumburg {
+    void buyIngredient();
+
+    void cutFruits();
+
+    void rissole();
+
+    void cleanEquipment();
+}
