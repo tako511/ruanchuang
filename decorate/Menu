@@ -1,0 +1,31 @@
+/**
+ * 接口{@code Menu}创建自选汉堡、奶茶配料菜单的接口
+ * 
+ * @author xue
+ *
+ */
+public interface Menu {
+    // 汉堡配料
+    public void chicken();
+
+    public void vegetable();
+
+    public void tomato();
+
+    public void beef();
+
+    public void cheese();
+
+    public void egg();
+    
+    // 奶茶配料
+    public void pudding();
+
+    public void yeguo();
+
+    public void ormosia();
+
+    public void mashedTaro();
+
+    public void pearl();
+}
