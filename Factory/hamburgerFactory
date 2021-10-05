@@ -1,0 +1,89 @@
+// 原味鸡排堡（工厂）所需原料
+public class ChickenHamburgerFactory implements HamburgIngredientFactory {
+
+    public Steak createSteak() {
+        return new Steak_Chicken();
+    }
+
+    public Sauce createSauce() {
+        return new Sauce_Tomato();
+    }
+
+    public Cheese createCheese() {
+        return new Cheese_Reggiano();
+    }
+
+    public Veggies[] createVeggies() {
+        Veggies veggies[] = { new Veggies_Tomato(), new Veggies_Lettuce()};
+        return veggies;
+    }
+}
+
+
+
+// 奥尔良鸡排堡（工厂）所需原料
+public class OrleansHamburgerFactory implements HamburgIngredientFactory {
+
+    public Steak createSteak() {
+        return new Steak_Orleans();
+    }
+
+    public Sauce createSauce() {
+        return new Sauce_Marinara();
+    }
+
+    public Cheese createCheese() {
+        return new Cheese_Reggiano();
+    }
+
+    public Veggies[] createVeggies() {
+        Veggies veggies[] = { new Veggies_Tomato(), new Veggies_Lettuce(), new Veggies_RedPepper() };
+        return veggies;
+    }
+}
+
+
+// 番茄牛肉堡（工厂）所需原料
+public class TomatoSteakHamburgerFactory implements HamburgIngredientFactory{
+
+    public Steak createSteak() {
+        return new Steak_Beef();
+    }
+
+    public Sauce createSauce() {
+        return new Sauce_Tomato();
+    }
+
+    public Cheese createCheese() {
+        return new Cheese_Mozzarella();
+    }
+
+    public Veggies[] createVeggies() {
+        Veggies veggies[] = { new Veggies_Tomato(), new Veggies_Lettuce()};
+        return veggies;
+    }
+}
+
+
+// 蟹黄堡（工厂）所需原料
+public class CrabHamburgerFactory implements HamburgIngredientFactory {
+
+    public Steak createSteak() {
+        return new Steak_Crab();
+    }
+
+    public Sauce createSauce() {
+        return new Sauce_Marinara();
+    }
+
+    public Cheese createCheese() {
+        return new Cheese_Parmesan();
+    }
+
+    public Veggies[] createVeggies() {
+        Veggies veggies[] = { new Veggies_RedPepper(), new Veggies_Lettuce()};
+        return veggies;
+    }
+}
+
+
